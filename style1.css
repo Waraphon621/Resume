@@ -1,0 +1,159 @@
+/* Define Pastel Color Variables */
+:root {
+    --pastel-blue: #a8d8ea;
+    --pastel-pink: #fcd5ce;
+    --pastel-green: #b7e4c7;
+    --pastel-yellow: #fff3b0;
+    --pastel-purple: #d0bdf4;
+}
+
+/* General Styles */
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: var(--pastel-blue);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--pastel-purple);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 15px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fcd5ce;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+
+/* Section Styles */
+section {
+    background-color: #fff;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: var(--pastel-purple);
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--pastel-purple);
+}
+
+section p, section ul, section ol {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid var(--pastel-pink);
+    object-fit: cover; /* ทำให้ภาพพอดีกับวงกลม */
+    object-position: top; /* ปรับตำแหน่งภาพเพื่อให้อยู่ในตำแหน่งที่พอดี */
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 1.5rem 0;
+}
+
+.contact-icon {
+    width: 1em; /* ขนาดไอคอนจะเท่ากับความสูงของตัวหนังสือ */
+    height: auto;
+    vertical-align: middle; /* จัดไอคอนให้อยู่กึ่งกลางบรรทัดเดียวกับข้อความ */
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--pastel-blue);
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+}

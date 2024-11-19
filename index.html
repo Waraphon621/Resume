@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>เกี่ยวกับฉัน</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Waraphon Phengkhamsri</h1>
+    </header>
+
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776; เมนู</div>
+        <ul>
+            <li><a href="#about">&#10052;ABOUT</a></li>
+            <li><a href="#education">&#10052;EDUCATION</a></li>
+            <li><a href="#work-experience">&#10052;WORK EXPERIENCE</a></li>
+            <li><a href="#skills">&#10052;SKILLS</a></li>
+            <li><a href="#contact">&#10052;CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <img class="profile" src="อ้อน.jpg" alt="Profile Image">
+        <h2>ABOUT</h2>
+        <hr>
+        <p>สาขาวิชาที่นักศึกษาสังกัด: <em>วิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์</em></p>
+        <p>ชื่อคณะ: วิศวกรรมศาสตร์และเทคโนโลยี</p>
+        <p>ชื่อสถาบัน: <a href="http://pim.ac.th" target="_blank">สถาบันการจัดการปัญญาภิวัฒน์</a></p>
+        <p>ประวัติโดยย่อ: I am committed to developing software and honing my skills in data analysis and programming with Java, C#, and SQL. I also have internship experience in both service and finance fields, along with strong teamwork skills to deliver high-quality solutions. My goal is to enhance my technological skills further and apply my knowledge to benefit society.</p>
+    </section>
+
+    <section id="education">
+        <h2>EDUCATION</h2>
+        <hr>
+        <p>PIM-Panyapiwat Institute of Management computer and technology</p>
+        <p>2023-now</p>
+    </section>
+
+    <section id="work-experience">
+        <h2>WORK EXPERIENCE</h2>
+        <hr>
+        <h3>Internship at ZEN CORPORATION GROUP: Service Staff</h3>
+        <p>April 2018 to September 2018</p>
+        <ul>
+            <li>Served, took orders, and provided excellent customer service to create a positive dining experience, etc.</li>
+        </ul>
+        <h3>Finance Officer at Central Department Store Co., Ltd.</h3>
+        <p>May 2019 to May 2020</p>
+        <ul>
+            <li>Reviewed the financials of Top Market, coordinated and resolved issues between the store and accounting department, and managed the POS system, etc.</li>
+        </ul>
+        <h3>Assistant Manager at Sinogen-Pinpetch Co., Ltd.</h3>
+        <p>September 2020 to April 2023</p>
+        <ul>
+            <li>Coordinated with the State Railway of Thailand regarding procurement, liaised with banks concerning working capital for the business, and handled assigned tasks, etc.</li>
+        </ul>
+        <h3>Internship at 7-Eleven (CP All PLC.)</h3>
+        <p>March 2024 to May 2024</p>
+        <ul>
+            <li>Cashier, provided customer service and assistance, restocked items in the store, and maintained store cleanliness, etc.</li>
+        </ul>
+    </section>
+    
+
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <hr>
+        <ul>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>C#</li>
+            <li>HTML, CSS</li>
+            <li>JavaScript</li>
+            
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>CONTACT</h2>
+        <hr>
+        <ol>
+            <li>Email: waraphon<img src="อ้อน2.jpg" alt="@" class="contact-icon">gmail.com</li>
+
+            <li>เบอร์โทรศัพท์: 088-827-8828</li>
+            <li>ที่อยู่: ลำลูกกา, ปทุมธานี</li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 สถาบันการจัดการปัญญาภิวัฒน์</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
